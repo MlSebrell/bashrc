@@ -1,1 +1,1 @@
-# bashrc
+# Personal Bash Profile
