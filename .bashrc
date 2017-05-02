@@ -59,7 +59,6 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
 
+# Alias for easier package managment
 alias pacman='sudo pacman'
-alias updatey='sudo pacman -Syuu'
-
-
+alias updatey='sudo pacman -Syyu'
