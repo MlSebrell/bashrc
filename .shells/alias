@@ -1,3 +1,6 @@
+#Source ~/.bashrc
+alias load='source ~/.bashrc'
+
 #Cute shell shortcuts
 alias ls='ls --sort=extension --color=auto'
 alias ll='ls -lh'
@@ -9,9 +12,6 @@ alias l='ls -CF'
 
 # Cool colors for man pages
 alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
-
-#Source ~/.bashrc
-alias load='source ~/.bashrc'
 
 #Display open ports
 alias ports='netstat -tulanp ' 
@@ -31,3 +31,25 @@ alias header='curl -I'
 # Pacman Alias for easier package management
 alias pacman='sudo pacman'
 alias updatey='sudo pacman -Syyu'
+
+# Prints out your IP Address.
+alias myip="curl icanhazip.com"
+
+# Re-run the last command as root.
+alias plz="fc -l -1 | cut -d' ' -f2 | xargs sudo"
+
+### git commands: handful of git commands to make life easier.
+alias add="git add"
+alias commit="git commit"
+alias push="git push"
+alias status="git status"
+alias stash="git stash"
+
+### weather: pass your city or zip code, and it returns the weather!
+###
+### USAGE - weather cleveland
+###         OR
+###         weather 44106
+###
+### WARNING - city and zip code args may yield inaccurate/different results.
+weather() { curl wttr.in/"$1"; }
