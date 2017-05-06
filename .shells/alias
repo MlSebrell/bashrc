@@ -1,0 +1,33 @@
+#Cute shell shortcuts
+alias ls='ls --sort=extension --color=auto'
+alias ll='ls -lh'
+alias lal='ls -alh'
+alias se='sudo vim'
+alias e='vim'
+alias smi='sudo make install'
+alias l='ls -CF'
+
+# Cool colors for man pages
+alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
+
+#Source ~/.bashrc
+alias load='source ~/.bashrc'
+
+#Display open ports
+alias ports='netstat -tulanp ' 
+
+#Shorcut for iptables and pass it via sudo
+alias ipt='sudo /sbin/iptables' 
+# Display all rules #
+alias iplist='sudo /sbin/iptables -L -n -v --line-numbers'
+alias iplistin='sudo /sbin/iptables -L INPUT -n -v --line-numbers'
+alias iplistout='sudo s/bin/iptables -L OUTPUT -n -v --line-numbers'
+alias iplistfw='sudo /sbin/iptables -L FORWARD -n -v --line-numbers'
+alias firewall=iptlist
+
+# Get web server headers # 
+alias header='curl -I'
+
+# Pacman Alias for easier package management
+alias pacman='sudo pacman'
+alias updatey='sudo pacman -Syyu'
