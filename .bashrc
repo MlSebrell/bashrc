@@ -12,7 +12,7 @@ export NICKNAME="Dashington"
 
 #Distribute bashrc into smaller, more specific files
 
-source .shells/alias
+source ~/.shells/alias
 
 #Welcome message
 echo -ne "Good Morning, $NICKNAME! It's "; date '+%A, %B %-d %Y'
